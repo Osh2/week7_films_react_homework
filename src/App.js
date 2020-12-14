@@ -1,9 +1,9 @@
-
+import FilmBox from "./containers/FilmBox";
 
 function App() {
   return (
-    <h1>Home page ya bish</h1>
+    <FilmBox />
   );
-}
+};
 
 export default App;
