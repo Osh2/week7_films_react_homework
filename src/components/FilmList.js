@@ -1,10 +1,16 @@
 import Film from "./Film";
 
-const FilmList = () =>{
+const FilmList = ({films}) =>{
+
+    const filmNodes = films.map((film)=>{
+        return( 
+            <Film name={film.name} url={film.url} key={film.id}/>
+        )
+    });
+
     return (
         <>
-            <h1>Film List</h1>
-            <Film />
+            <h3>{filmNodes}</h3>
         </>
     );
 };
